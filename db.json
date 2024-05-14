@@ -1,0 +1,929 @@
+{
+  "notifications": [
+    {
+      "id": "1",
+      "title": "Уведомление 1",
+      "description": "Произошло какое-то событие",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Уведомление 2",
+      "description": "Произошло какое-то событие",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "3",
+      "title": "Уведомление 3",
+      "description": "Произошло какое-то событие",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "4",
+      "title": "Уведомление 4",
+      "description": "Произошло какое-то событие",
+      "userId": "1"
+    },
+    {
+      "id": "5",
+      "title": "Уведомление 5",
+      "description": "Произошло какое-то событие",
+      "userId": "1"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "json-server",
+      "userId": "2"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": "Javascript news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
+      "views": 1022,
+      "createdAt": "26.04.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "8",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": "9",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Python news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
+      "views": 5204,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Kotlin news 2019",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://yandex-images.clstorage.net/Upu4M9251/2810ee_Y/oUYWPAm_e3Yd9FhOoKR27__5zM7eT2WTpQTr3CMITeJE--ExD6jpHZMyhqR43zT4vGX-7NDernrb0OAREkzbCWQHM6jdez93qEEcDyXk9t-v2Bka716gM-DVT_nj_A0ysX6kEGooXYhjNjeELeySnzsCXXu2iQxYLATlUdeMyqiwdiXeva8JECwnKnkD5pSfLekJbXyfghHD9RkJEr14cNYpE8b62j6_oeeFk8ufE615U92YZRlcSk-1BGIGTIuMYkUXLEqceNHONnva0WaFPh8oOw8uvgBgsBXoCGM_OPAm6hNlGAoP3FFXdmLr3lIuCVFe6tQ5vuoNpRVjpv65PmBFtP0Z7IqCvqY4S9A0Ns8_COmOX05R0UCGC2tDraoglInhhphYLf5CFfZg6E-RnUvRDnu2ux1rvpYXkDecyCwiNmesGd9LIl2265qDpWYdbVqbTxzswMICZRg48A-qopWKEdYYecy_M5YmocgewO9b4r2oN_tNSq-2duIk7aitYBeUTfjtWMI8JRsLwXV07a05alxc3tIRg7Y4yvAsCBM2WRGHm7i__wI19pBoXkN9y_H9-WXrvVj8lhex9W37X0GXxh9b7njhzAS62eIGxz2PagqMTSwwMaAEqArjb2jj9BgSJYoJ789jlySSWd8iflmynevHCuyqDqTkQ3Rdy5wy12duKS5q4cwEy8gRlLTd7Ck7bM8vUiOwNLo6w2xa01fqEqa4eiytQZVnsxotEj3ZUewrJPifG4y1hEJlv5g_AaQ0bCs--TBtNxpZE9cGLZ36KawfT6GSokUquSCPWvCl63J3euoOPKIW1bCIvSANSDEuafQLHDquVUZgF_yKfXH2BQ3ZfXoBf8Q7WNOm5T3OiAk_T3yRkWAWidsQf2uxBdsRNsioH5-hVwWwW95Q_igS3kvXid77r9Z1YqT-e49R9fW-2KxrM4-2avvCNHbs3otZHm6NsEJyZAnoUY95A",
+      "views": 94002,
+      "createdAt": "26.02.2019",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Scala news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
+      "views": 10222,
+      "createdAt": "24.01.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Golang news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://www.itsec.ru/hs-fs/hubfs/ISR/Golang.png?width=750&name=Golang.png",
+      "views": 10222,
+      "createdAt": "26.02.2020",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Java news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://andreyex.ru/wp-content/uploads/2018/05/Kak-ustanovit-Java-s-apt-na-Ubuntu-18.04.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Ruby news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oqV3akcU--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/pgnw91fs7tpxn0wyeqh2.jpg",
+      "views": 100,
+      "createdAt": "21.02.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "TypeScript news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://i.ytimg.com/vi/ztk9WZClmLQ/maxresdefault.jpg",
+      "views": 102222,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Web Development Trends 2022",
+      "subtitle": "The latest in web development",
+      "img": "https://static.tildacdn.biz/tild3663-3062-4635-a633-636262326435/4884783-01.png",
+      "views": 3500,
+      "createdAt": "15.06.2022",
+      "userId": "2",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Web development is a rapidly evolving field, and staying updated with the latest trends is crucial for developers.",
+            "In 2022, several trends are shaping the web development landscape, including the rise of Jamstack architecture and the increasing importance of PWAs (Progressive Web Apps)."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://d2ms8rpfqc4h24.cloudfront.net/What_Place_Jamstack_aside_from_traditional_Architecture_6efc0018a0.jpg",
+          "title": "Jamstack Architecture"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hello, Jamstack!'));\napp.listen(3000, () => console.log('Server listening on port 3000'));"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Data Science Tools Overview",
+      "subtitle": "Exploring the latest tools in Data Science",
+      "img": "https://datasciencedojo.com/wp-content/uploads/7-data-science-tools-1030x1030.png",
+      "views": 2400,
+      "createdAt": "10.08.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "The field of data science continues to grow, and new tools are constantly emerging to facilitate data analysis and machine learning.",
+            "In this article, we'll explore some of the latest and most promising data science tools, including Jupyter Notebooks, TensorFlow, and PyTorch."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "import pandas as pd\nimport numpy as np\n# Data analysis with pandas and numpy"
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://datasciencepartners.nl/wp-content/uploads/2019/06/wat-is-jupyter-notebook.png",
+          "title": "Jupyter Notebooks"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Mobile App Development Tips",
+      "subtitle": "Key insights for building successful mobile apps",
+      "img": "https://positiwise.com/blog/wp-content/uploads/2023/04/tips-and-ticks-to-build-successful-mobile-app-1.jpg",
+      "views": 1800,
+      "createdAt": "05.11.2022",
+      "userId": "1",
+      "type": [
+        "MOBILE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "With the increasing demand for mobile apps, developers need to stay informed about the best practices and tips for successful mobile app development.",
+            "In this article, we'll discuss key insights, such as the importance of responsive design, optimizing for performance, and leveraging push notifications."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://public-images.interaction-design.org/literature/articles/materials/flTR2AEh0Xm8QMKevDdSR4x08XS9oDCs2FrMxpjj.jpg",
+          "title": "Responsive Design"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for push notification\nconst push = require('push-notification-library');\npush.send('Hello, your app is awesome!', 'User123');"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Cyber-security Best Practices",
+      "subtitle": "Securing your digital presence",
+      "img": "https://www.itsecurityguru.org/wp-content/uploads/2023/10/Best-cybersecurity-practices.png",
+      "views": 2800,
+      "createdAt": "20.09.2022",
+      "userId": "2",
+      "type": [
+        "CYBERSECURITY"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In an era of increasing digital threats, cyber security has become a top priority for individuals and organizations.",
+            "This article provides essential best practices for securing your digital presence, covering topics such as strong password management, two-factor authentication, and regular security audits."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "// Example code for two-factor authentication\nconst security = require('security-library');\nsecurity.enableTwoFactorAuth('User123');"
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://www.coxblue.com/wp-content/uploads/2019/01/How-to-Run-a-Business-Security-Audit.jpg",
+          "title": "Security Audit"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "UI/UX Design Principles",
+      "subtitle": "Creating compelling user experiences",
+      "img": "https://www.kisworks.com/blog/wp-content/uploads/2020/02/ui-ux-3.jpg",
+      "views": 1500,
+      "createdAt": "12.04.2022",
+      "userId": "2",
+      "type": [
+        "DESIGN"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "User interface (UI) and user experience (UX) design play a crucial role in the success of digital products.",
+            "This article explores fundamental design principles, including the use of whitespace, color psychology, and the importance of user feedback, to help designers create compelling and intuitive user experiences."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://londonimageinstitute.com/wp-content/uploads/2020/01/How-to-Empower-Yourself-with-Color-Psychology-Varying-Colors.jpg",
+          "title": "Color Psychology"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for gathering user feedback\nconst feedback = require('feedback-library');\nfeedback.collectFeedback('User123');"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Blockchain and Cryptocurrency Trends",
+      "subtitle": "Exploring the latest developments in blockchain",
+      "img": "https://www.cryptopolitan.com/wp-content/uploads/2023/01/Top-7-blockchain-and-cryptocurrency-trends-in-2023-copy.png",
+      "views": 4200,
+      "createdAt": "08.07.2022",
+      "userId": "1",
+      "type": [
+        "Blockchain",
+        "Cryptocurrency"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "Blockchain technology and cryptocurrencies continue to reshape various industries.",
+            "This article delves into the latest trends and developments in blockchain, covering topics such as decentralized finance (DeFi), non-fungible tokens (NFTs), and the integration of blockchain in supply chain management."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://dsb.edu.in/wp-content/uploads/2023/08/Understanding-DeFi-The-New-Way-of-Finance.jpg",
+          "title": "Decentralized Finance (DeFi)"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for NFT smart contract\nconst nft = require('nft-contract-library');\nnft.deploySmartContract('User123');"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Artificial Intelligence in Healthcare",
+      "subtitle": "Transforming the healthcare industry with AI",
+      "img": "https://i.ytimg.com/vi/j6EB9HO6acE/maxresdefault.jpg",
+      "views": 3200,
+      "createdAt": "15.10.2022",
+      "userId": "2",
+      "type": [
+        "HEALTHCARE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Artificial intelligence (AI) is playing a significant role in revolutionizing healthcare.",
+            "This article explores the applications of AI in healthcare, including predictive analytics, image recognition, and personalized medicine, to improve patient outcomes and streamline medical processes."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://www.qualtrics.com/m/assets/wp-content/uploads/2020/05/1359555_PredictiveAnalytics_01_050222.png",
+          "title": "Predictive Analytics"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for AI image recognition\nconst ai = require('image-recognition-library');\nai.recognizeImage('MedicalScan123');"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://cdn.tveda.ru/medialibrary/ff9/ff9fa64615de701cd76e6820291e35bb/90f0b22bed4d9076debbd9592e1021ad.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://optim.tildacdn.com/tild6662-3339-4966-b230-306166393436/-/resize/840x/-/format/webp/image.png",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://www.ixbt.com/img/n1/news/2022/5/4/1_28_large.png",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://www.kadrof.ru/sites/default/files/illustrations/study_programming.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/3965742/pub_5f60f66d5622142b9382bdaa_5f60f6fc8b0f2342e52012a4/scale_1200",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
+      "views": 1022,
+      "createdAt": "26.04.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [],
+      "id": "pq0txlK"
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
+      "views": 1022,
+      "createdAt": "26.04.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [],
+      "id": "kyJFjBq"
+    }
+  ],
+  "comments": [
+    {
+      "text": "Хорошая статья!",
+      "articleId": "4",
+      "userId": "1",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true,
+        "isAppRedesigned": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
+      "avatar": "https://clck.ru/36jJ25"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user",
+      "roles": [
+        "USER"
+      ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
+      "avatar": "https://clck.ru/36nvwp"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "manager",
+      "role": [
+        "MANAGER"
+      ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": false
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
+      "avatar": "https://clck.ru/36nvwp"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "role": [
+        "ADMIN"
+      ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
+      "avatar": "https://clck.ru/36nvwp"
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "first": "kirill",
+      "lastname": "zavalishin",
+      "age": 21,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Tomsk",
+      "username": "zakiquel",
+      "avatar": "https://clck.ru/36jJ25"
+    },
+    {
+      "id": "2",
+      "first": "alesha",
+      "lastname": "zavalishin",
+      "age": 19,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Tomsk",
+      "username": "pewqq",
+      "avatar": "https://clck.ru/36nvwp"
+    },
+    {
+      "id": "4",
+      "first": "user",
+      "lastname": "test",
+      "age": 22,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Tomsk",
+      "username": "testuser",
+      "avatar": "https://clck.ru/36nvwp"
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 3,
+      "id": "weeJVBS"
+    },
+    {
+      "userId": "1",
+      "articleId": "4",
+      "rate": 4,
+      "feedback": "фывфыв",
+      "id": "t5853An"
+    },
+    {
+      "userId": "1",
+      "articleId": "16",
+      "rate": 5,
+      "feedback": "sfgdfg",
+      "id": "9tef0aO"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": "4",
+      "feedback": "Комментарий профиля",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": "4",
+      "feedback": "Комментарий профиля",
+      "userId": "1",
+      "profileId": "2"
+    }
+  ]
+}
