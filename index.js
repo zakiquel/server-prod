@@ -1,20 +1,28 @@
 const fs = require('fs');
-const jsonServer = require('json-server');
 const path = require('path');
+
+const jsonServer = require('json-server');
 
 const server = jsonServer.create();
 
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
 
+const dbPath = path.resolve(__dirname, 'db.json');
+
 server.use(jsonServer.defaults({}));
 server.use(jsonServer.bodyParser);
 
+server.use(async (req, res, next) => {
+  await new Promise((res) => {
+    setTimeout(res, 800);
+  });
+  next();
+});
 
-// Эндпоинт для логина
 server.post('/login', (req, res) => {
   try {
     const { username, password } = req.body;
-    const db = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'));
+    const db = JSON.parse(fs.readFileSync(dbPath, 'UTF-8'));
     const { users = [] } = db;
 
     const userFromBd = users.find(
@@ -32,19 +40,16 @@ server.post('/login', (req, res) => {
   }
 });
 
-// проверяем, авторизован ли пользователь
 // eslint-disable-next-line
-server.use((req, res, next) => {
-  if (!req.headers.authorization) {
-    return res.status(403).json({ message: 'AUTH ERROR' });
-  }
-
-  next();
-});
+// server.use((req, res, next) => {
+//   if (!req.headers.authorization) {
+//     return res.status(403).json({ message: 'AUTH ERROR' });
+//   }
+//   next();
+// });
 
 server.use(router);
 
-// запуск сервера
 server.listen(8000, () => {
   console.log('server is running on 8000 port');
 });
